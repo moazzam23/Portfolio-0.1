@@ -15,7 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { BsSun, BsMoon } from "react-icons/bs";
+import { BsSun, BsMoon, BsFillMoonFill } from "react-icons/bs";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -145,14 +145,15 @@ function NavBar() {
 
             <Nav.Item className="mode-btn">
               <Button
+              style={{marginTop:"9px",background:"none",border:"none"}}
                 variant="outline-light"
                 onClick={() => setDarkMode(!darkMode)}
-                className="fork-btn-inner"
+                // className="fork-btn-inner"
               >
                 {darkMode ? (
-                  <BsSun style={{ fontSize: "1.2em" }} />
+                  <BsFillMoonFill style={{ color:"white", fontSize: "1.7em" }} />
                 ) : (
-                  <BsMoon style={{ fontSize: "1.2em" }} />
+                  <BsSun style={{ color:"yellow" ,fontSize: "1.7em" }} />
                 )}
               </Button>
             </Nav.Item>
