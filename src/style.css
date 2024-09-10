@@ -14,6 +14,51 @@ html {
   --imp-text-color: #c770f0;
 }
 
+:root{
+  --section-background-color: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
+  );
+
+  --image-gradient: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
+  );
+
+  --imp-text-color: #c770f0;
+--backgroundColor: #0c0513;
+--background2: rgba(178, 121, 216, 0.959);
+--white:#fff;
+
+--navbar-bg: #1b1a2ea9;
+--navbar-toggler-bg: #be50f4;
+--navbar-toggler-hover-bg: #be50f4;
+--link-color: #c95bf5;
+--hover-link-color: #c95bf5;
+--btn-primary-bg: #623686;
+--btn-primary-hover-bg: #6d20c5d7;
+--social-icon-bg: rgba(255, 255, 255, 0.972);
+--social-icon-hover-bg: #68187a;
+--footer-bg: rgb(10, 4, 22);
+--footer-text-color: #a588c0;
+--project-card-bg: transparent;
+--project-card-shadow: rgba(119, 53, 136, 0.459);
+--blog-card-bg: transparent;
+--blog-card-shadow: rgba(145, 77, 161, 0.459);
+--tech-icon-border: rgba(200, 137, 230, 0.637);
+--tech-icon-hover-border: rgba(197, 115, 230, 0.883);
+--resume-border: #8a49a8;
+--resume-dot-bg: #fff;
+--resume-dot-border: #8a49a8;
+--like-btn-bg: #934cce5e;
+--like-btn-hover-bg: #a24dd386;
+--fork-btn-bg: #934cce5e;
+--fork-btn-hover-bg: #a24dd386
+
+}
+
 .purple {
   color: var(--imp-text-color) !important;
 }
@@ -32,7 +77,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: var(--backgroundColor);
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -62,13 +107,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: var(--background2);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: var(--background2);
   border-radius: 12px;
 }
 
@@ -76,7 +121,7 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: var(--navbar-bg) !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -97,7 +142,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: var(--navbar-toggler-bg) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -194,7 +239,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--link-color);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -538,6 +583,24 @@ button:focus {
   padding-top: 10px !important;
 }
 
+
+.skillmarquee{
+  font-family: Playfair;
+  font-size: 1.7rem;
+  height: 4rem;
+  word-spacing: 10px; 
+  border-bottom: 3px dotted var(--imp-text-color);
+  color: var(--imp-text-color);
+
+  
+  svg{
+      fill: var(--white);
+      width:2.5rem;
+      word-spacing: 0;
+      height: 2.5rem;
+
+  }}
+
 /* --------- */
 /* About */
 /* --------- */
@@ -547,7 +610,7 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: var(--white) !important;
 }
 
 .tech-icons {
@@ -583,7 +646,7 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: var(--white) !important;
   background-color: transparent !important;
 }
 

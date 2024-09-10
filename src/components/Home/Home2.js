@@ -7,6 +7,10 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
+import {TbBrandNextjs} from "react-icons/tb"
+import {SiAdobexd,SiAdobeillustrator, SiTailwindcss, SiSass, SiExpress} from "react-icons/si"
+import { FaReact ,FaBootstrap, FaLaravel, FaPhp, FaCss3, FaJava, FaNodeJs } from 'react-icons/fa'
+import {DiFirebase, DiHtml5, DiJavascript, DiMongodb, DiMysql, DiPostgresql} from "react-icons/di"
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -56,6 +60,18 @@ function Home2() {
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
+          </Col>
+        </Row>
+        <Row>
+
+        <h1 className="purple" style={{ fontSize: "2.6em",padding:"20px 0px" }}>
+              Skills
+            </h1>
+          <Col md={12}  className="d-flex flex-column justify-content-center">
+          <marquee className='skillmarquee'> 
+         <DiHtml5/> HTML    <FaCss3/> CSS <DiJavascript/> Javascript <FaReact/> React <SiSass/> Sass  <SiTailwindcss/> Tailwind Css <DiMongodb/> Mongodb  </marquee>
+         <marquee className='skillmarquee' direction='right'> <FaJava/> Java <DiPostgresql/> Postgresql  <SiExpress/> Express Js <FaNodeJs/> Node JS   <FaBootstrap/> React Bootstrap</marquee>
+         <marquee className='skillmarquee'><SiAdobexd/> Abode XD <SiAdobeillustrator/> Adobe Illustrator  <FaReact/> React Router Dom <DiFirebase/> Firbase</marquee>
           </Col>
         </Row>
         <Row>
