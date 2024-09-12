@@ -842,7 +842,7 @@ button:focus {
 }
 
 .timeline-line {
-  width: 10px;
+  width: 5px;
   height: 100%;
   background: var(--btn-primary-bg);
   position: absolute;
@@ -857,3 +857,55 @@ button:focus {
 .timeline-item:last-child  {
   display: none;
 } */
+
+
+.container2 {
+  margin-top: 10rem;
+
+  .contact-form {
+    max-width: 55rem;
+    height: 100%;
+    box-shadow: 0px 5px 5px  var(--hover-link-color);
+    margin: auto;
+    font-family: playfair;
+    font-weight: 900;
+    /* border: 1px solid var(--btn-primary-bg); */
+    border-radius: 10px;
+
+    .contact-inputs {
+      display: flex;
+      padding: 20px;
+      flex-direction: column;
+      border: none;
+      gap: 1rem;
+      input {
+        border: 1px solid var(--btn-primary-hover-bg);
+        border-radius: 5px;
+        padding: 7px 6px;
+        text-transform: capitalize;
+      }
+      textarea {
+        border: 1px solid var(--btn-primary-hover-bg);
+        border-radius: 5px;
+        padding: 7px 6px;
+        text-transform: capitalize;
+      }
+      input[type="submit"] {
+        cursor: pointer;
+        width: 5rem;
+        background-color: var(--hover-link-color);
+        color: var(--backgroundColor);
+        border: 1px solid var(--btn-primary-hover-bg);
+        border-radius: 4px;
+        transition: all 0.2s;
+
+        &:hover {
+          background-color: var(--btn-primary-hover-bg);
+          border: 1px solid var(--navbar-bg);
+          color: var(--white);
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}

@@ -30,7 +30,7 @@ function Certificate() {
   <Col md={4} className="project-card" key={item.id}>
     <ProjectCard
       imgPath={item.image}
-      isBlog={false}
+      isBlog={true}
       title={item.title}
       description={item.description}
       ghLink={item.ghlink || '#'} // Fallback if ghLink is missing

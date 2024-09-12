@@ -2,11 +2,9 @@ import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -15,8 +13,8 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import { BsSun, BsMoon, BsFillMoonFill } from "react-icons/bs";
-import { FaCertificate, FaGraduationCap } from "react-icons/fa";
+import { BsSun, BsFillMoonFill } from "react-icons/bs";
+import { FaCertificate } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -99,15 +97,6 @@ function NavBar() {
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaGraduationCap style={{ marginBottom: "2px" }} /> Education
-              </Nav.Link>
-            </Nav.Item>
 
            < Nav.Item>
               <Nav.Link
@@ -144,7 +133,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/moazzam23/Portfolio-0.1"
                 target="_blank"
                 className="fork-btn-inner"
               >

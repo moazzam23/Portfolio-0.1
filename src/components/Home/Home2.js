@@ -7,11 +7,12 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import {TbBrandNextjs} from "react-icons/tb"
-import {SiAdobexd,SiAdobeillustrator, SiTailwindcss, SiSass, SiExpress} from "react-icons/si"
-import { FaReact ,FaBootstrap, FaLaravel, FaPhp, FaCss3, FaJava, FaNodeJs } from 'react-icons/fa'
-import {DiFirebase, DiHtml5, DiJavascript, DiMongodb, DiMysql, DiPostgresql} from "react-icons/di"
+import { TbNetwork} from "react-icons/tb"
+import {SiAdobexd,SiAdobeillustrator, SiTailwindcss, SiSass, SiExpress, SiVercel} from "react-icons/si"
+import { FaReact ,FaBootstrap, FaCss3, FaJava, FaNodeJs, FaEnvelope } from 'react-icons/fa'
+import {DiFirebase, DiHtml5, DiJavascript, DiMongodb, DiPostgresql} from "react-icons/di"
 import { FaLinkedinIn } from "react-icons/fa";
+import { BsBehance, BsPhone } from "react-icons/bs";
 
 function Home2() {
   return (
@@ -28,7 +29,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> React JS, Javascript, Java and Postgresql . </b>
               </i>
               <br />
               <br />
@@ -37,7 +38,7 @@ function Home2() {
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Blockchain.
+                  Enterprize Level.
                 </b>
               </i>
               <br />
@@ -52,8 +53,13 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js and Java</b>
               </i>
+
+              <br />
+              <br />
+              Customizing the Open Source ERP System  <b className="purple">Idempiere</b>
+             
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -65,8 +71,8 @@ function Home2() {
 
 {/* Experience Section */}
 <Row>
-          <h1 className="purple" style={{ fontSize: "2.6em", padding: "20px 0px" }}>
-            Experience
+          <h1 className="label" style={{ fontSize: "2.6em", padding: "20px 0px" }}>
+           <TbNetwork/> Experience
           </h1>
           <Col md={12} className="d-flex justify-content-center">
             <div className="timeline">
@@ -120,6 +126,36 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
+            <li className="social-icons">
+                <a
+                  href="mailto:baigm9033@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaEnvelope />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="tel:0331-4483362"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <BsPhone />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.behance.net/moazzambaig"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <BsBehance />
+                </a>
+              </li>
               <li className="social-icons">
                 <a
                   href="https://github.com/moazzam23"
@@ -132,17 +168,17 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://vercel.com/dashboard"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <SiVercel />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/mirza-muhammad-moazzam-baig-0b127a215/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -152,7 +188,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/moazzambaig23/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -161,6 +197,19 @@ function Home2() {
                 </a>
               </li>
             </ul>
+          </Col>
+          <Col md={12}>
+          <div className="container2">
+      <div className="contact-form">
+        <form action="https://formspree.io/f/xoqoolne" method="POST" className="contact-inputs" > 
+        {/* <h2> Contact Or Have A Coffee For Talk </h2><br /> */}
+        <input style={{marginTop:"-110px"}} type="text"  placeholder="username" name="username" required autoComplete="off" />
+        <input type="email"  placeholder="Enter active email" name="email" required autoComplete="off" />
+       <textarea name="description"  required autoComplete="off" placeholder="enter your message" cols={30} rows={10}></textarea>
+<input type="submit" />
+        </form>
+      </div>
+    </div>
           </Col>
         </Row>
       </Container>
