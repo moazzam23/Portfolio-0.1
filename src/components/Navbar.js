@@ -20,7 +20,7 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  const [darkMode, setDarkMode] = useState(false); // Theme state
+  const [darkMode, setDarkMode] = useState(true); // Theme state
   useEffect(() => {
     if (!darkMode) {
       document.documentElement.classList.add("lightmode");
