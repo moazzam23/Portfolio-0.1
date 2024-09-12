@@ -21,30 +21,11 @@ function NavBar() {
   const [navColour, updateNavbar] = useState(false);
 
   const [darkMode, setDarkMode] = useState(false); // Theme state
-
   useEffect(() => {
-    // Toggle theme based on darkMode state
-    if (darkMode) {
-      document.documentElement.style.setProperty(
-        "--section-background-color",
-        "linear-gradient(to bottom left, rgba(255, 255, 255, 0.9), rgba(200, 200, 255, 0.9))"
-        
-      );
-      document.documentElement.style.setProperty(
-        "--image-gradient",
-        "linear-gradient(to bottom left, rgba(200, 200, 255, 0.9), rgba(255, 255, 255, 0.9))"
-      );
-      document.documentElement.style.setProperty("--imp-text-color", "#000");
-    } else {
-      document.documentElement.style.setProperty(
-        "--section-background-color",
-        "linear-gradient(to bottom left, rgba(17, 16, 16, 0.582), rgba(12, 8, 24, 0.904))"
-      );
-      document.documentElement.style.setProperty(
-        "--image-gradient",
-        "linear-gradient(to bottom left, rgba(17, 16, 16, 0.678), rgba(12, 10, 22, 0.863))"
-      );
-      document.documentElement.style.setProperty("--imp-text-color", "#c770f0");
+    if (!darkMode) {
+      document.documentElement.classList.add("lightmode");
+    } else  {
+      document.documentElement.classList.remove("lightmode");
     }
   }, [darkMode]);
 

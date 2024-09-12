@@ -31,7 +31,7 @@ html {
 --backgroundColor: #0c0513;
 --background2: rgba(178, 121, 216, 0.959);
 --white:#fff;
-
+--view-blow:rgba(155, 88, 173, 0.65);
 --navbar-bg: #1b1a2ea9;
 --navbar-toggler-bg: #be50f4;
 --navbar-toggler-hover-bg: #be50f4;
@@ -44,6 +44,7 @@ html {
 --footer-bg: rgb(10, 4, 22);
 --footer-text-color: #a588c0;
 --project-card-bg: transparent;
+--project-view:rgba(155, 88, 173, 0.65);
 --project-card-shadow: rgba(119, 53, 136, 0.459);
 --blog-card-bg: transparent;
 --blog-card-shadow: rgba(145, 77, 161, 0.459);
@@ -54,9 +55,76 @@ html {
 --resume-dot-border: #8a49a8;
 --like-btn-bg: #934cce5e;
 --like-btn-hover-bg: #a24dd386;
+--resume:#5234795d;
 --fork-btn-bg: #934cce5e;
---fork-btn-hover-bg: #a24dd386
+--tech-shadow:rgba(89, 4, 168, 0.137);
+--fork-btn-hover-bg: #a24dd386;
+--home-social-icon:#87209e;
+--icon-color:#700c86;
+--home-social-hover:#801f95;
+--typewriter-cursor:#b562d6;
+--typewriter-wrap:#be6adf;
+--mainnaem:#cd5ff8;
+--navbar-media:#181a27;
+--sticky:rgba(9, 5, 29, 0.171);
+--scrollbar:#2d1950;
 
+}
+
+.lightmode{
+    --section-background-color: linear-gradient(
+      to bottom left,
+      rgba(240, 240, 240, 0.9),
+      rgba(230, 230, 250, 0.8)
+    );
+  
+    --image-gradient: linear-gradient(
+      to bottom left,
+      rgba(240, 240, 240, 0.9),
+      rgba(220, 220, 250, 0.8)
+    );
+  
+    --imp-text-color: #000000; /* Muted purple for emphasis */
+    --backgroundColor: #f9f9fb;
+    --background2: rgba(210, 210, 240, 0.9); 
+    --white: #3f0069;
+    --view-blow: rgba(175, 145, 200, 0.5);
+    --navbar-bg: #ffffffa9;
+    --navbar-toggler-bg: #a050d6;
+    --navbar-toggler-hover-bg: #9437c9;
+    --link-color: #8e44ad;
+    --hover-link-color: #732d91;
+    --btn-primary-bg: #a36eb6;
+    --btn-primary-hover-bg: #6a1e9a;
+    --social-icon-bg: rgba(255, 255, 255, 0.9);
+    --social-icon-hover-bg: #8e44ad;
+    --footer-bg: rgb(245, 245, 250);
+    --footer-text-color: #5f4b8b;
+    --project-card-bg: rgba(245, 245, 250, 0.9);
+    --project-view: rgba(175, 145, 200, 0.6);
+    --project-card-shadow: rgba(175, 145, 200, 0.4);
+    --blog-card-bg: rgba(240, 240, 250, 0.9);
+    --blog-card-shadow: rgba(175, 145, 200, 0.4);
+    --tech-icon-border: rgba(175, 145, 200, 0.5);
+    --tech-icon-hover-border: rgba(175, 145, 200, 0.8);
+    --resume-border: #7e57c2;
+    --resume-dot-bg: #fff;
+    --resume-dot-border: #7e57c2;
+    --like-btn-bg: rgba(180, 100, 220, 0.4);
+    --like-btn-hover-bg: rgba(180, 100, 220, 0.6);
+    --resume: #e0d7f5;
+    --fork-btn-bg: rgba(180, 100, 220, 0.4);
+    --fork-btn-hover-bg: rgba(180, 100, 220, 0.6);
+    --home-social-icon: #7e57c2;
+    --icon-color: #e6abff;
+    --home-social-hover: #6a1e9a;
+    --typewriter-cursor: #8e44ad;
+    --typewriter-wrap: #a67fdf;
+    --mainnaem: #7e57c2;
+    --navbar-media: #f5f5fa;
+    --sticky: rgba(245, 245, 250, 0.6);
+    --scrollbar: #c1b5d9;
+  
 }
 
 .purple {
@@ -102,7 +170,7 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: var(--scrollbar);
 }
 
 /* Handle */
@@ -123,7 +191,7 @@ button:focus {
 .sticky {
   background-color: var(--navbar-bg) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px var(--sticky) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -189,14 +257,14 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: var(--navbar-media) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color:var(--white) !important;
 }
 
 .logo {
@@ -205,7 +273,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--white) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -311,7 +379,7 @@ button:focus {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  color: var(--white);
   text-align: left;
 }
 
@@ -326,17 +394,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(--mainnaem);
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: var(--typewriter-wrap) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--typewriter-cursor) !important;
 }
 
 @media (max-width: 767px) {
@@ -364,12 +432,13 @@ button:focus {
 
 .home-about-section {
   position: relative;
+  background: var(--section-background-color);
   padding-bottom: 70px !important;
   padding-top: 70px !important;
 }
 
 .home-about-description {
-  color: white !important;
+  color: var(--white) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -384,7 +453,7 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: var(--white) !important;
 }
 
 .home-about-social-links {
@@ -403,7 +472,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: var(--white) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -416,7 +485,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: var(--social-icon-hover-bg);
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -424,13 +493,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px var(--home-social-hover);
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: var(--home-social-icon);
+  box-shadow: 0 0 5px var(--home-social-icon);
+  text-shadow: 0 0 2px var(--home-social-icon);
 }
 
 .social-icons {
@@ -440,14 +509,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: var(--icon-color) !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: var(--footer-bg);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -473,7 +542,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: var(--white) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -484,7 +553,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: var(--footer-text-color) !important;
 }
 /* --------- */
 /* Projects */
@@ -505,8 +574,8 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
+  box-shadow: 0 4px 5px 3px var(--project-card-shadow) !important;
+  color: var(--white) !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -515,7 +584,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px var(--project-view) !important;
 }
 
 .blog-card {
@@ -528,14 +597,14 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
+  box-shadow: 0 3px 3px 2px var(--blog-card-shadow) !important;
+  color: var(--white) !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 
 .blog-link {
-  color: white !important;
+  color: var(--white) !important;
   text-decoration: none !important;
 }
 
@@ -546,7 +615,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px var(--view-blow) !important;
 }
 
 .card-img-top {
@@ -562,22 +631,22 @@ button:focus {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: var(--white) !important;
+  background-color: var(--btn-primary-bg) !important;
+  border-color: var(--btn-primary-bg) !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  color: var(--white) !important;
+  background-color: var(--btn-primary-hover-bg) !important;
+  border-color: var(--btn-primary-hover-bg) !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: var(--white) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -618,12 +687,12 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid var(--tech-icon-border) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+  box-shadow: 4px 5px 4px 3px var(--tech-shadow) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -637,7 +706,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid  var(--tech-icon-hover-border) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -670,7 +739,7 @@ button:focus {
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: var(--white) !important;
 }
 
 .resume {
@@ -708,14 +777,14 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid var(--resume-border);
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
+  background: var(--resume);
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -744,8 +813,8 @@ button:focus {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #8a49a8;
+  background: var(--white);
+  border: 2px solid var(--resume-border);
 }
 
 .like-item {
@@ -755,8 +824,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
+  background-color: var(--fork-btn-bg) !important;
+  border-color: var(--fork-btn-bg) !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -765,8 +834,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: var(--fork-btn-hover-bg) !important;
+  border-color: var(--fork-btn-hover-bg) !important;
 }
 
 .animate-like {
@@ -790,7 +859,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: var(--fork-btn-bg) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -798,8 +867,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: var(--fork-btn-hover-bg) !important;
+  border-color: var(--fork-btn-hover-bg) !important;
 }
 .fork-btn-inner::after {
   display: none !important;
