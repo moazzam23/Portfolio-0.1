@@ -804,3 +804,56 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.timeline-content {
+  width: 35%;
+  padding: 20px;
+  background: transparent;
+  color: var(--imp-text-color);
+  border: 1px solid var(--social-icon-hover-bg);
+  border-radius: 10px;
+}
+
+.timeline-content.left {
+  text-align: left;
+  position: relative;
+  right: 0%;
+}
+
+.timeline-content.right {
+  text-align: left;
+  position: relative;
+  left: 60%;
+}
+
+.timeline-line {
+  width: 10px;
+  height: 100%;
+  background: var(--btn-primary-bg);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.label{
+  color: var(--white);
+}
+/* 
+.timeline-item:last-child  {
+  display: none;
+} */

@@ -62,8 +62,47 @@ function Home2() {
             </Tilt>
           </Col>
         </Row>
-        <Row>
 
+{/* Experience Section */}
+<Row>
+          <h1 className="purple" style={{ fontSize: "2.6em", padding: "20px 0px" }}>
+            Experience
+          </h1>
+          <Col md={12} className="d-flex justify-content-center">
+            <div className="timeline">
+              <div className="timeline-item">
+                <div className="timeline-content left">
+                  <h4>ID Logix, Johar Town Lahore</h4>
+                  <p><label className="label">Position:</label>  Full Stack Developer</p>
+                  <p> <label className="label">Duration:</label> Sep-2023 To Date  (On-Site)</p>
+                  <p><label className="label">Technology:</label>  React JS, JavaScript, Java, Postgresql</p>
+                </div>
+                <div className="timeline-line"></div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-content right">
+                  <h4>Premium Ebizols Digital, Bahria Town Lahore</h4>
+                  <p><label className="label">Position:</label>   React JS Developer</p>
+                  <p> <label className="label">Duration:</label>  Aug-2022 To Oct-2022  (On-Site)</p>
+                  <p><label className="label">Technology:</label>  React JS, JavaScript, HTML, CSS, Bootstrap</p>  
+                                </div>
+                <div className="timeline-line"></div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-content left">
+                <h4>  Indian Institute Of Digital Education</h4>
+                <p><label className="label">Position:</label>  Digital Marketing Internee</p>
+                  <p> <label className="label">Duration:</label> Feb-2022 To March-2022  (Online)</p>
+                  <p><label className="label">Technology:</label>  Social Media Marketing, SEO, Content
+                  Writing and Google Sheet Management</p> 
+                                 </div>
+                <div className="timeline-line"></div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+
+        <Row>
         <h1 className="purple" style={{ fontSize: "2.6em",padding:"20px 0px" }}>
               Skills
             </h1>
